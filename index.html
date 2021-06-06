@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dear Diary</title>
+    <link type="text/css" rel="style" href="fonts.css">
     <link type="text/css" rel="style" href="style.css">
 </head>
-<body>
+<body id="body">
     <h1>Salut petit chat</h1>
     <h1>Mes journaux intimes</h1>
     <h1>Sélectionne ta météo d’aujourd’hui</h1>
@@ -17,5 +18,18 @@
     <h1>Laisse-toi aller</h1>
     <h1>Bienvenue !</h1>
     <h1>Dear Diary</h1>
+    <script src="./js/Swipe.js"></script>
+    <script>
+        window.location.replace('./pages/splash-screen/splash-screen.html')
+        /*
+        // Use class to get element by string.
+       let swiper = new Swipe('body');
+        swiper.onLeft(function() {
+            if (swiper.xDown && swiper.yDown ) {
+                alert('You swiped left.')
+            }
+        });
+        swiper.run();*/
+    </script>
 </body>
 </html>

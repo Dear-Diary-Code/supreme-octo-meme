@@ -1,0 +1,22 @@
+body {
+    background-color: #05152C;
+}
+img {
+    position: absolute;
+    top: 38vh;
+    left: calc(50vw - 3.5rem);
+    width: 7rem;
+    height: auto;
+    filter: drop-shadow(0px 0px 10px #6d96d77e);
+}
+h1 {
+    width: 100vw;
+    font-size: 24px;
+    font-family: 'Poppins-Light';
+    position: absolute;
+    top: calc(38vh + 7rem);
+    text-align: center;
+    background: linear-gradient(45deg, #6492E1, #C2DDEC, #BABAF6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
