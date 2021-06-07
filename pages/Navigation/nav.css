@@ -3,7 +3,7 @@ body {
 }
 
 img {
-display: inline;
+display: inline-block;
 margin-left: 27.5px;
 margin-right: 27.5px;
 width: 15px;
