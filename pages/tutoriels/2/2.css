@@ -33,3 +33,35 @@ p {
     left: 18vw;
     width: 64vw;
 }
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 70vh ;
+    left: calc(50vw - 31px);
+}
+li {
+   display: inline-block;
+   width: 10px;
+   height: 5px;
+   border-radius: 3px;
+   background-color: #80A6E7;
+   opacity: 0.28;
+   transition: width 0.5s ease-in-out;
+}
+.active {
+   transition: width 0.5s ease-in-out;
+   width: 20px;
+   background-color: #80A6E7;
+   opacity: 1;
+}
+.passer {
+    text-decoration: none;
+    font-family: 'Poppins-Medium';
+    font-size: 13px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+}

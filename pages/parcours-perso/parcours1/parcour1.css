@@ -3,11 +3,6 @@ body {
     height: 100vh;
     margin: 0;
 }
-.illustration{
-    position: absolute;
-    top: 3vh;
-    left: 0;
-}
 .fleche{
     position: absolute;
     bottom: 15vh;
@@ -24,15 +19,9 @@ h1 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-p {
-    font-family: 'Poppins-Regular';
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50.5vh;
-    left: 18vw;
-    width: 64vw;
+.theme{
+    display: flex;
+    
 }
 ul {
      list-style: none;
