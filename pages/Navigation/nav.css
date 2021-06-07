@@ -3,17 +3,18 @@ body {
 }
 
 img {
-display: inline-block;
-margin-left: 27.5px;
-margin-right: 27.5px;
+display: inline-flex;
+margin-left: 27px;
+margin-right: 27px;
 width: 15px;
 height: 15px;
+bottom: 20vh;
 }
 
 .home {
     margin-left: 40px;
     }
 
-    .profil {
-        margin-right: 40px;
-        }
+.profil {
+   margin-right: 40px;
+   }
