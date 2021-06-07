@@ -1,20 +1,23 @@
 body {
     background-color: #05152C;
+    padding: 0;
+    margin: 0;
 }
 
-img {
-display: inline-flex;
-margin-left: 27px;
-margin-right: 27px;
-width: 15px;
-height: 15px;
-bottom: 20vh;
-}
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    min-height: 80px;
+    align-content: center;
+    background-color: #05152C;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    border-top: 1px rgba(255,255,255, .5) solid;
+  }
 
-.home {
-    margin-left: 40px;
-    }
 
-.profil {
-   margin-right: 40px;
-   }
