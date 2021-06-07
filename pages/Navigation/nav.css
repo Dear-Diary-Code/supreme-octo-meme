@@ -12,12 +12,14 @@ body {
     justify-content: space-around;
     vertical-align: middle;
     min-height: 80px;
-    align-content: center;
+    align-items: center;
     background-color: #05152C;
     position: fixed;
     bottom: 0;
     width: 100vw;
-    border-top: 1px rgba(255,255,255, .5) solid;
+    border-top: 1px rgba(128,166,231, .33) solid;
   }
+
+
 
 
