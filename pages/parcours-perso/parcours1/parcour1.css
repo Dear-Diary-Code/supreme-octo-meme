@@ -15,7 +15,7 @@ h1 {
     position: absolute;
     top: calc(30vh + 7rem);
     text-align: center;
-    background: linear-gradient(15deg, #6492E1, #C2DDEC, #BABAF6);
+    background: linear-gradient(115deg, #6492E1, #6492E1, #C2DDEC, #BABAF6, #BABAF6);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }

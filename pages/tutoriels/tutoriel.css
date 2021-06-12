@@ -46,6 +46,16 @@ li {
     opacity: 0.28;
     transition: width 0.5s ease-in-out;
 }
+.passer {
+    z-index: 1;
+    text-decoration: none;
+    font-family: 'Poppins-Medium';
+    font-size: 13px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+}
 .illustration{
     position: absolute;
     top: 3vh;
