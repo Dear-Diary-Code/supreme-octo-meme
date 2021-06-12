@@ -1,0 +1,85 @@
+:root {
+    --purple: #B6B6F8;
+    --blue: #80A6E7;
+    --pink: #F1C4D9;
+}
+
+body {
+    background-color: #05152C;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    width: 100vw;
+    font-size: 22px;
+    font-family: 'Poppins-SemiBold';
+    position: absolute;
+    top: calc(30vh + 6.9rem);
+    text-align: center;
+    background: linear-gradient(115deg, #6492E1, #6492E1, #C2DDEC, #BABAF6, #BABAF6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p {
+    font-family: 'Poppins-Regular';
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50.5vh;
+    left: 18vw;
+    width: 64vw;
+}
+ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     position: absolute;
+     top: 70vh ;
+     left: calc(50vw - 31px);
+}
+li {
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    border-radius: 3px;
+    opacity: 0.28;
+    transition: width 0.5s ease-in-out;
+}
+.illustration{
+    position: absolute;
+    top: 3vh;
+    left: 0;
+}
+.fleche{
+    position: absolute;
+    bottom: 15vh;
+    left: calc(50vw - 39px);
+}
+.page {
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.page.active {
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    left: 0;
+}
+li.active {
+    transition: width 0.5s ease-in-out;
+    width: 20px;
+    opacity: 1;
+}
+.purple {
+    background-color: var(--purple);
+}
+.blue {
+    background-color: var(--blue);
+}
+.pink {
+    background-color: var(--pink);
+}
