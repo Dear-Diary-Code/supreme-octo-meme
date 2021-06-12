@@ -1,0 +1,25 @@
+body {
+    background-color: #05152C;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    min-height: 80px;
+    align-items: center;
+    background-color: #05152C;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    border-top: 1px rgba(128,166,231, .33) solid;
+  }
+
+
+
+

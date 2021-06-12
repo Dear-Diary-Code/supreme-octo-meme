@@ -6,6 +6,7 @@ body {
 .illustration{
     position: absolute;
     top: 3vh;
+    left: 0;
 }
 .fleche{
     position: absolute;
@@ -19,7 +20,7 @@ h1 {
     position: absolute;
     top: calc(30vh + 7rem);
     text-align: center;
-    background: linear-gradient(45deg, #6492E1, #C2DDEC, #BABAF6);
+    background: linear-gradient(15deg, #6492E1, #C2DDEC, #BABAF6);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -34,27 +35,27 @@ p {
     width: 64vw;
 }
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 70vh ;
-    left: calc(50vw - 31px);
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     position: absolute;
+     top: 70vh ;
+     left: calc(50vw - 31px);
 }
 li {
-   display: inline-block;
-   width: 10px;
-   height: 5px;
-   border-radius: 3px;
-   background-color: #80A6E7;
-   opacity: 0.28;
-   transition: width 0.5s ease-in-out;
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #B6B6F8;
+    opacity: 0.28;
+    transition: width 0.5s ease-in-out;
 }
 .active {
-   transition: width 0.5s ease-in-out;
-   width: 20px;
-   background-color: #80A6E7;
-   opacity: 1;
+    transition: width 0.5s ease-in-out;
+    width: 20px;
+    background-color: #B6B6F8;
+    opacity: 1;
 }
 .passer {
     text-decoration: none;
