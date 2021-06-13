@@ -1,3 +1,5 @@
+@import '../../../style.css';
+
 body {
     background-color: #05152C;
 
@@ -19,25 +21,21 @@ img {
 }
 h1 {
     width: 100vw;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Poppins-Light';
     position: absolute;
     top: calc(38vh + 7rem);
     text-align: center;
-    background: linear-gradient(45deg, #6492E1, #C2DDEC, #BABAF6);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 p {
     font-family: 'Poppins-Regular';
     color: white;
     position: absolute;
-    font-size: 1rem;
+    font-size: 0.875rem;
     bottom: -10vh;
     overflow: hidden;
     left: 25vw;
     width: 50vw;
-    height: 1.2rem;
     text-align: center;
     opacity: 0;
 }

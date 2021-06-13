@@ -22,6 +22,7 @@ nextDom.addEventListener('click', function(event) {
         // on retire la class active de tous les elements de la page précédente
         const previousIndex = (parseInt(currentPage) - 1);
         pagesDom[previousIndex].classList.remove('active');
+        pagesDom[previousIndex].classList.add('inactive');
         pagesIndexesDom[previousIndex].classList.remove('active');
         // on met à jour les courleurs du slider
         pagesIndexesDom.forEach(function(elem) {

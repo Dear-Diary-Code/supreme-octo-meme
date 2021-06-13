@@ -1,3 +1,5 @@
+@import '../../../style.css';
+
 body {
     background-color: #05152C;
     height: 100vh;
@@ -8,31 +10,79 @@ body {
     bottom: 15vh;
     left: calc(50vw - 39px);
 }
-h1 {
+h2 {
     width: 100vw;
-    font-size: 22px;
-    font-family: 'Poppins-SemiBold';
     position: absolute;
-    top: calc(30vh + 7rem);
+    top: 12vh;
     text-align: center;
-    background: linear-gradient(115deg, #6492E1, #6492E1, #C2DDEC, #BABAF6, #BABAF6);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .theme{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 2rem;
+    width: calc(100vw - 4rem);
+    top: 28vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.subject {
     display: flex;
-    align-items: flex-start;
+    width: calc((100vw - 4rem)/3);
+    flex-direction: column;
     flex-wrap: wrap;
     opacity: 1;
-
+}
+.subject:nth-child(3n) {
+    position: relative;
+    left: calc((100% - 76px) / 2);
+}
+.subject:nth-child(3n+1) {
+    position: relative;
+    left: calc(-1 * ((100% - 76px) / 2));
+}
+.subject::after {
+    content: '';
+    width: 76px;
+    height: 76px;
+    display: block;
+    background-color: rgba(var(--grey), 0.08);
+    position: relative;
+    top: -86px;
+    left: calc(100% /2 - 38px);
+    z-index: -1;
+    border-radius: 50%;
+}
+.subject > span {
+    text-align: center;
+    font-family: 'Poppins-Regular';
+    color: white;
+    position: relative;
+    top: 1rem;
 }
 
 .passer {
+    z-index: 1;
     text-decoration: none;
     font-family: 'Poppins-Medium';
     font-size: 13px;
-    color: #FFFFFF;
+    color: white;
     position: absolute;
     top: 5vh;
     right: 10vw;
+}
+
+.changer {
+    border: none;
+    border-radius: 18px;
+    height: 36px;
+    width: 99px;
+    color: white;
+    background-color: rgba(var(--blue), 0.53);
+    font-family: 'Poppins-Medium';
+    font-size: 13px;
+    position: absolute;
+    top: 61vh;
+    right: 2rem;
 }
