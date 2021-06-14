@@ -48,7 +48,6 @@ p {
 .presentation {
     display: inline;
     margin: 16px;
-    align-content: flex-start;
 }
 
 .titre2 {
@@ -58,19 +57,39 @@ p {
 }
 
 
-h3 {
-    position: absolute;
-    padding-left: 4px;  
-}
-
-
 .block0 {
-    display: flex;
     background: rgba(168, 178, 244, 0.13);
     border-radius: 5px;
     position: relative;
     margin: 16px;
     top: 84px;
+    color: #fff
+}
+
+.block0-presentation {
+    display: flex;
+    padding: 4px;
+}
+
+.block0-title {
+    margin: 4px;
+}
+
+.block1-presentation {
+    position: relative;
+    margin: 8px;
+    padding-left : 4px;
+    display: flex;
+    height : 28px; 
+}
+
+.block1-image {
+ width: 22px;
+ height: 22px;
+}
+
+p{
+    margin: 4px;
 }
 
 .liste {
@@ -100,14 +119,14 @@ h3 {
     top: 420px;
 }
 
-.block2 {
-    background: rgba(168, 178, 244, 0.13);
-    border-radius: 5px;
-    position: absolute;
-    width: 338px;
-    height: 200px;
-    left: 19px;
-    top: 615px;
+.unesalade {
+    position : relative; 
+    top : -16px;
+    left : 12px;
+}
+
+.pic {
+    margin: 8px;
 }
 
 .n1 {
