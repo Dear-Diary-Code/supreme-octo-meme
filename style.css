@@ -15,7 +15,7 @@ body {
     margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2 {
     background: linear-gradient(115deg, #6492E1, #6492E1, #C2DDEC, #BABAF6, #BABAF6);
     background-clip: text;
     -webkit-text-fill-color: transparent;
