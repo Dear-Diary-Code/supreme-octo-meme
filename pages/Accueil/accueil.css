@@ -68,6 +68,29 @@ position: relative;
 
 }
 
+.block1 {
+    position: absolute;
+    display: inline-block;
+    width: 342px;
+    height: 160px;
+    left: 17px;
+    top: 169px; 
+}
+
+.block2 {
+    position: absolute;
+width: 338px;
+height: 200px;
+left: 19px;
+top: 392px;
+}
+
+.n1 {
+    display: flex;
+align-items : flex-start;
+flex-wrap: nowrap;
+}
+
 .nav-list {
     list-style: none;
     padding: 0;
