@@ -78,7 +78,7 @@ p {
 .block1-presentation {
     position: relative;
     margin: 8px;
-    padding-left : 4px;
+    padding-left : 8px;
     display: flex;
     height : 28px; 
 }
@@ -88,8 +88,13 @@ p {
  height: 22px;
 }
 
+.hashtag {
+    margin-left: 8px;
+}
+
 p{
-    margin: 4px;
+    margin: 8px;
+    padding-left : 8px;
 }
 
 .liste {
@@ -137,20 +142,29 @@ p{
     padding-bottom: 4px;
     padding-top: 4px;
     border-radius: 10px;
-    align-items : flex-start;
-    flex-wrap: nowrap;
+
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .n2 {
     color: #B6B3B3;
     display: inline;
-    padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 4px;
     padding-top: 4px;
     border-radius: 10px;
-    align-items : flex-start;
-    flex-wrap: nowrap;
+}
+
+.n3 {
+    color: #B6B3B3;
+    display: inline;
+    padding-right: 8px;
+
 }
 
 .nav-list {
