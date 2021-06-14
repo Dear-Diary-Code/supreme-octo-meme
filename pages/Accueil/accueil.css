@@ -1,0 +1,91 @@
+
+@import '../../style.css';
+
+:root {
+    /* allow to use dynamic alpha apply with rgb() (no alpha) or rgba() (with alpha) */
+    --purple: 180, 180, 248;
+    --blue: 128, 166, 231;
+    --pink: 241, 196, 217;
+    --grey: 249, 246, 246; 
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 70vh ;
+    left: calc(50vw - 31px);
+}
+
+h1 {
+  position: absolute;
+  top: ;
+}
+
+h2 {
+    font-size: 1.375rem;
+    font-family: 'Poppins-SemiBold';
+}
+
+h4 {
+    font-size: 0.9375rem;
+    font-family: 'Poppins-Medium';
+    color: #FFFFFF;
+
+}
+
+p {
+    font-size: 0.875rem;
+    font-family: 'Poppins-Regular';
+    color: white;
+}
+
+.titledate {
+    display: flex;
+    line-height: 1rem;
+}
+
+h3 {
+position: relative;
+
+}
+
+.block1 {
+    position: absolute;
+    display: inline-block;
+    width: 342px;
+    height: 160px;
+    left: 17px;
+    top: 169px; 
+}
+
+.block2 {
+    position: absolute;
+width: 338px;
+height: 200px;
+left: 19px;
+top: 392px;
+}
+
+.n1 {
+    display: flex;
+align-items : flex-start;
+flex-wrap: nowrap;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    min-height: 80px;
+    align-items: center;
+    background-color: #05152C;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    border-top: 1px rgba(128,166,231, .33) solid;
+  }
