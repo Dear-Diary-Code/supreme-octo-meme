@@ -57,3 +57,12 @@ li {
     background-color: #B6B6F8;
     opacity: 1;
 }
+.passer {
+    text-decoration: none;
+    font-family: 'Poppins-Medium';
+    font-size: 13px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+}

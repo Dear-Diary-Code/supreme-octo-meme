@@ -1,0 +1,84 @@
+@import '../../style.css';
+
+h2 {
+    width: 100vw;
+    position: absolute;
+    top: calc(30vh + 6.9rem);
+    text-align: center;
+}
+p {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50.5vh;
+    left: 15vw;
+    width: 70vw;
+}
+ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     position: absolute;
+     top: 70vh ;
+     left: calc(50vw - 31px);
+}
+li {
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    border-radius: 3px;
+    opacity: 0.28;
+    transition: width 0.5s ease-in-out;
+}
+.passer {
+    z-index: 1;
+    text-decoration: none;
+    font-family: 'Poppins-Medium';
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+}
+.illustration{
+    position: absolute;
+    top: 3vh;
+    left: 0;
+}
+.fleche{
+    position: absolute;
+    bottom: 15vh;
+    left: calc(50vw - 39px);
+}
+.page {
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.page.active {
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    left: 0;
+}
+.page.inactive {
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    left: -100vw;
+}
+li.active {
+    transition: width 0.5s ease-in-out;
+    width: 20px;
+    opacity: 1;
+}
+.purple {
+    background-color: rgb(var(--purple));
+}
+.blue {
+    background-color: rgb(var(--blue));
+}
+.pink {
+    background-color: rgb(var(--pink));
+}
