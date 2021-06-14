@@ -17,4 +17,36 @@
     border-top: 1px rgba(128,166,231, .33) solid;
   }
 
-  
+  .boule1 {
+    display: flex;
+    background: rgba(168, 178, 244, 0.13);
+    border-radius: 5px;
+    position: relative;
+    margin: 16px;
+    top: 64px;
+  }
+
+  .boule2 {
+    background: rgba(168, 178, 244, 0.13);
+    border-radius: 5px;
+    position: absolute;
+    /* width: 338px;
+    height: 200px; */
+    margin: 16px;
+    top: 415px;
+}
+
+.boule3 {
+    background: rgba(168, 178, 244, 0.13);
+    border-radius: 5px;
+    position: absolute;
+    /* width: 338px;
+    height: 200px; */
+    margin: 16px;
+    top: 565px;
+}
+
+/* .skrt {
+
+    align-content: space-between;
+} */
