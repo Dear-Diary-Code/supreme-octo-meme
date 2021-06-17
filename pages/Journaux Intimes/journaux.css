@@ -17,6 +17,12 @@
     border-top: 1px rgba(128,166,231, .33) solid;
   }
 
+  h1 {
+    position: absolute;  
+    top: 64px;
+    padding-left: 16px;
+}
+
   .boule1 {
     display: flex;
     background: rgba(168, 178, 244, 0.13);
