@@ -10,12 +10,16 @@
 
 h1 {
     position: absolute;  
-    top: 64px;
+    top: 32px;
     padding-left: 16px;
 }
 
+h2{
+    color: #FFF;
+} 
+
 .date {
-    top: 96px;
+    top: 66px;
     position: relative;
     padding-left: 16px;
 }
@@ -25,7 +29,7 @@ h1 {
     font-family: 'Poppins-SemiBold';
     position: relative;
     left: 16px;
-    top: 100px;
+    top: 64px;
     color: #FFFFFF;
 
 }
@@ -34,7 +38,6 @@ h4 {
     font-size: 0.9375rem;
     font-family: 'Poppins-Medium';
     color: #FFFFFF;
-
 }
 
 p {
@@ -51,7 +54,7 @@ p {
 
 .titre2 {
     position: absolute;
-    top: 368px;
+    top: 340px;
     padding-left: 16px;
 }
 
@@ -59,19 +62,18 @@ p {
 .block0 {
     background: rgba(168, 178, 244, 0.13);
     border-radius: 5px;
-    position: relative;
+    position: absolute;
     margin: 16px;
-    top: 84px;
-    color: #fff
+    top: 150px;
+    color: #fff;
 }
 
 .block0-presentation {
     display: flex;
-    padding: 4px;
 }
 
 .block0-title {
-    margin: 4px;
+    margin-left: 8px;
 }
 
 .block1-presentation {
@@ -91,7 +93,7 @@ p {
     margin-left: 8px;
 }
 
-p{
+p {
     margin: 8px;
     padding-left : 8px;
 }
@@ -117,10 +119,19 @@ p{
     background: rgba(168, 178, 244, 0.13);
     border-radius: 5px;
     position: absolute;
-    width: 338px;
+    right: 16px;
+    left: 16px;
+    top: 398px;
+}
+
+.block2 {
+    background: rgba(168, 178, 244, 0.13);
+    border-radius: 5px;
+    position: absolute;
+    right : 16px;
     height: 200px;
-    left: 19px;
-    top: 420px;
+    left: 16px;
+    top: 640px;
 }
 
 .unesalade {
@@ -130,7 +141,15 @@ p{
 }
 
 .pic {
-    margin: 8px;
+    position : relative;
+    margin-left: 8px;
+    width: 95px;
+    height: 95px;
+}
+
+.block0-texte {
+    position: relative;
+    bottom: 16px;
 }
 
 .n1 {
