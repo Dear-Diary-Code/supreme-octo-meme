@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./parcours-perso.css">
+    <title>Document</title>
+</head>
+<body>
+    <a class="passer" href="">Passer</a>
+    <section class="page active">
+        <h2 class="gradient-text">Quels sujets t’intéresse aujourd’hui ?</h2>
+        <div class="slide" id="slide">
+            <div class="theme" id="p1">
+                <label><input type="checkbox" name="subject" class="ns item colere">Colère</label>
+                <label><input type="checkbox" name="subject" class="ns item content">Content</label>
+                <label><input type="checkbox" name="subject" class="ns item ecole">Ecole</label>
+                <label><input type="checkbox" name="subject" class="ns item sexe">Sexe</label>
+                <label><input type="checkbox" name="subject" class="ns item tristesse">Tristesse</label>
+                <label><input type="checkbox" name="subject" class="ns item famille">Famille</label>
+            </div>
+            <div class="theme"  id="p2">
+                <label><input type="checkbox" name="subject" class="ns item coeur-brise">Tristesse</label>
+                <label><input type="checkbox" name="subject" class="ns item bonheur">Content</label>
+                <label><input type="checkbox" name="subject" class="ns item oh-merde">Sexe</label>
+                <label><input type="checkbox" name="subject" class="ns item amour">Famille</label>
+                <label><input type="checkbox" name="subject" class="ns item coup-de-gueule">Ecole</label>
+                <label><input type="checkbox" name="subject" class="ns item la-fete">Colère</label>
+            </div>  
+        </div>
+        <button id="btn1" class="changer">Changer</button>
+    </section>
+    <section class="page">
+        <h2 class="gradient-text">Sélectionne ta météo d'aujourd’hui</h2>
+        <div class="theme meteo"  id="p3">
+            <input type="radio" name="meteo" class="ns item center soleil">
+            <input type="radio" name="meteo" class="ns item deg0 nuageux">
+            <input type="radio" name="meteo" class="ns item deg90 arc-en-ciel">
+            <input type="radio" name="meteo" class="ns item deg180 pluie">
+            <input type="radio" name="meteo" class="ns item deg225 nuage">
+            <input type="radio" name="meteo" class="ns item deg315 eclair">
+        </div>
+    </section>
+    <ul class="">
+        <li class="page-step purple active">&nbsp;</li>
+        <li class="page-step purple">&nbsp;</li>
+    </ul>
+    <img id="next" data-current="1" class="fleche" src="../../img/tuto1_fleche.svg" alt="">
+
+</body>
+<script src="./parcours-perso.js"></script>
+</html>

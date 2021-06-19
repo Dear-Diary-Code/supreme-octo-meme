@@ -9,61 +9,40 @@
 </head>
 <body>
     <a class="passer" href="">Passer</a>
-    <h2>Quels sujets t’intéresse aujourd’hui ?</h2>
-    <div class="slide" id="slide">
-        <div class="firstpage" id="p1">
-            <input type="checkbox" name="toto" class="subject">
-            <input type="checkbox" name="toto" class="subject">
-            <input type="checkbox" name="toto" class="subject">
-            <input type="checkbox" name="toto" class="subject">
-            <input type="checkbox" name="toto" class="subject">
-            <input type="checkbox" name="toto" class="subject">
-
-            <button id="bt1">next</button>
+    <section class="page active">
+        <h2>Quels sujets t’intéresse aujourd’hui ?</h2>
+        <div class="slide" id="slide">
+            <div class="theme" id="p1">
+                <label><input type="checkbox" name="toto" class="ns subject colere">Colère</label>
+                <label><input type="checkbox" name="toto" class="ns subject content">Content</label>
+                <label><input type="checkbox" name="toto" class="ns subject ecole">Ecole</label>
+                <label><input type="checkbox" name="toto" class="ns subject sexe">Sexe</label>
+                <label><input type="checkbox" name="toto" class="ns subject tristesse">Tristesse</label>
+                <label><input type="checkbox" name="toto" class="ns subject famille">Famille</label>
+            </div>
+            <div class="theme"  id="p2">
+                <label><input type="checkbox" name="toto" class="ns subject tristesse">Tristesse</label>
+                <label><input type="checkbox" name="toto" class="ns subject content">Content</label>
+                <label><input type="checkbox" name="toto" class="ns subject sexe">Sexe</label>
+                <label><input type="checkbox" name="toto" class="ns subject famille">Famille</label>
+                <label><input type="checkbox" name="toto" class="ns subject ecole">Ecole</label>
+                <label><input type="checkbox" name="toto" class="ns subject colere">Colère</label>
+            </div>  
         </div>
-        <div class="secondpaeg"  id="p2">
-            <input type="checkbox" name="dede" class="ns radio grucho">
-            <input type="checkbox" name="dede"  class="ns radio grucho">
-            <input type="checkbox" name="dede" class="ns radio grucho">
-            <input type="checkbox" name="dede"  class="ns radio grucho">
-            <input type="checkbox" name="dede" class="ns radio grucho">
-            <input type="checkbox" name="dede"  class="ns radio grucho">
-          <button>next</button>
-        </div>  
-      </div>
-    </div>
-    <ul class="theme">
-        <li class="subject">
-            <img src="../../../img/Emojis/Colère icone.svg" alt="">
-            <span>Colère</span>   
-        </li>
-        <li class="subject">
-            <img src="../../../img/Emojis/Content icone.svg" alt="">
-            <span>Amis</span>
-        </li>
-        <li class="subject">
-            <img src="../../../img/Emojis/Ecole icone.svg" alt="">
-            <span>Ecole</span>
-        </li>
-        <li class="subject">
-            <img src="../../../img/Emojis/Sexe icone.svg" alt="">
-            <span>Sexe</span>
-        </li>
-        <li class="subject">
-            <img src="../../../img/Emojis/Tristesse icone.svg" alt="">
-            <span>Tristesse</span>
-        </li>
-        <li class="subject">
-            <img src="../../../img/Emojis/Famille icone.svg" alt="">
-            <span>Famille</span>
-        </li>
-    </ul>
+    </section>
+    <section class="page">
+        <img class="illustration" src="../../img/Image TUTO2.svg" alt="illustration">
+        <h2>Laisse-toi aller</h2>
+        <p>Tu peux écrire ce que tu ressens ; tes moments précieux comme les plus difficiles, quand tu veux, où tu le souhaites, ton Dear diary est là pour ça !</p>
+        
+    </section>
     <ul class="">
         <li class="purple active">&nbsp;</li>
         <li class="purple">&nbsp;</li>
     </ul>
-    <button class="changer">Changer</button>
+    <button id="btn1" class="changer">Changer</button>
     <a href="../parcours2/parcour2.html"><img class="fleche" src="../../../img/tuto1_fleche.svg" alt=""></a>
-  
+
 </body>
+<script src="./parcour1.js"></script>
 </html>

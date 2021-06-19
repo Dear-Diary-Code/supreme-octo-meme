@@ -1,9 +1,14 @@
+const btn = document.getElementById('btn1');
+const slide = document.getElementById('slide');
+
+btn.addEventListener('click', function(event) {
+    slide.classList.toggle('slide-step2');
+});
+
 // la liste des différentes couleurs à utiliser
 const pageClassColor = [
     "purple",
-    "blue",
-    "pink",
-    "blue",
+    "blue"
 ]
 // on selectionne tous les elements du DOM (Document Object Model) qui nous intéresse dans la page
 const nextDom = document.getElementById('next');
@@ -16,7 +21,7 @@ nextDom.addEventListener('click', function(event) {
     const currentPage = event.target.dataset.current;
     // puis on incrémente la valeur de l'attribut dataset de 1 pour correspondre à notre nouvelle page
     event.target.dataset.current = parseInt(currentPage) + 1;
-    if (event.target.dataset.current < 5) {
+    if (event.target.dataset.current <= pageClassColor.length) {
         // on met à jour la couleur de la flèche
         flecheDom.setAttribute('src', "../../img/tuto" + (parseInt(currentPage) + 1) + "_fleche.svg")
         // on retire la class active de tous les elements de la page précédente

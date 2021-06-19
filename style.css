@@ -15,7 +15,7 @@ body {
     margin: 0;
 }
 
-h1 {
+.gradient-text {
     background: linear-gradient(115deg, #6492E1, #6492E1, #C2DDEC, #BABAF6, #BABAF6);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -33,4 +33,14 @@ p {
     font-size: 0.875rem;
     font-family: 'Poppins-Regular';
     color: white;
+}
+
+.purple {
+    background-color: rgb(var(--purple));
+}
+.blue {
+    background-color: rgb(var(--blue));
+}
+.pink {
+    background-color: rgb(var(--pink));
 }

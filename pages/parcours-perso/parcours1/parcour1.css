@@ -19,47 +19,23 @@ h2 {
 .theme{
     padding: 0;
     margin: 0;
-    position: absolute;
+    position: relative;
     left: 2rem;
     width: calc(100vw - 4rem);
     top: 28vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
 
 }
-.subject {
-    display: flex;
-    width: calc((100vw - 4rem)/3);
-    flex-direction: column;
-    flex-wrap: wrap;
-    opacity: 1;
-}
-.subject:nth-child(3n) {
-    position: relative;
-    left: calc((100% - 76px) / 2);
-}
-.subject:nth-child(3n+1) {
-    position: relative;
-    left: calc(-1 * ((100% - 76px) / 2));
-}
-.subject::after {
-    content: '';
-    width: 76px;
-    height: 76px;
-    display: block;
-    background-color: rgba(var(--grey), 0.08);
-    position: relative;
-    top: -86px;
-    left: calc(100% /2 - 38px);
-    z-index: -1;
-    border-radius: 50%;
-}
-.subject > span {
+ label {
     text-align: center;
     font-family: 'Poppins-Regular';
     color: white;
     position: relative;
     top: 1rem;
+    width: 4.5rem;
 }
 
 .passer {
@@ -85,4 +61,62 @@ h2 {
     position: absolute;
     top: 61vh;
     right: 2rem;
+    cursor: pointer;
+}
+
+.ns {
+    appearance: none;
+}
+
+.subject {
+    border-radius: 100%;
+    width: 4.5rem;
+    height: 4.5rem;
+    padding: 0.75rem;
+    margin: 0;
+    background-color: rgba(var(--grey), 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subject:checked {
+    background-color: rgba(var(--grey), 0.4);
+}
+
+
+.slide {
+    display: grid;
+    grid-template-columns: repeat(2, 100vw);
+    transition: all 0.3s;
+}
+.slide-step2 {
+    transform: translateX(-100%);
+}
+
+.colere::before , .content::before , .ecole::before ,
+.sexe::before , 
+.tristesse::before , 
+.famille::before {
+    position: relative;
+    top: 1px;
+}
+
+.colere::before {
+    content: url("../../../img/Emojis/Colère icone.svg");
+}
+.content::before {
+    content: url("../../../img/Emojis/Content icone.svg");
+}
+.ecole::before {
+    content: url("../../../img/Emojis/Ecole icone.svg");
+}
+.sexe::before {
+    content: url("../../../img/Emojis/Sexe icone.svg");
+}
+.tristesse::before {
+    content: url("../../../img/Emojis/Tristesse icone.svg");
+}
+.famille::before {
+    content: url("../../../img/Emojis/Famille icone.svg");
 }

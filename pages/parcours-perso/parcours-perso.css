@@ -1,0 +1,256 @@
+@import '../../style.css';
+
+body {
+    background-color: #05152C;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+}
+.fleche{
+    position: absolute;
+    bottom: 15vh;
+    left: calc(50vw - 39px);
+}
+h2 {
+    width: 100vw;
+    position: absolute;
+    top: 12vh;
+    text-align: center;
+}
+.theme {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 2rem;
+    width: calc(100vw - 4rem);
+    top: 28vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+
+}
+ label {
+    text-align: center;
+    font-family: 'Poppins-Regular';
+    color: white;
+    position: relative;
+    top: 1rem;
+    width: 4.5rem;
+}
+
+.passer {
+    z-index: 1;
+    text-decoration: none;
+    font-family: 'Poppins-Medium';
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+}
+
+.changer {
+    border: none;
+    border-radius: 18px;
+    height: 36px;
+    width: 99px;
+    color: white;
+    background-color: rgba(var(--blue), 0.53);
+    font-family: 'Poppins-Medium';
+    font-size: 13px;
+    position: absolute;
+    top: 61vh;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.ns {
+    appearance: none;
+}
+
+.item {
+    border-radius: 100%;
+    width: 4.5rem;
+    height: 4.5rem;
+    padding: 0.75rem;
+    margin: 0;
+    background-color: rgba(var(--grey), 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item:checked {
+    background-color: rgba(var(--grey), 0.4);
+}
+
+
+.slide {
+    display: grid;
+    grid-template-columns: repeat(2, 100vw);
+    transition: all 0.3s;
+}
+.slide-step2 {
+    transform: translateX(-100%);
+}
+
+.slide-step2 #p1 {
+    opacity: 0;
+}
+#p2 {
+    opacity: 0;
+}
+.slide-step2 #p2 {
+    opacity: 1;
+}
+
+.item::before {
+    position: relative;
+    top: 1px;
+}
+
+.colere::before {
+    content: url("../../img/Emojis/Colère\ icone.svg");
+}
+.content::before {
+    content: url("../../img/Emojis/Content\ icone.svg");
+}
+.ecole::before {
+    content: url("../../img/Emojis/Ecole\ icone.svg");
+}
+.sexe::before {
+    content: url("../../img/Emojis/Sexe\ icone.svg");
+}
+.tristesse::before {
+    content: url("../../img/Emojis/Tristesse\ icone.svg");
+}
+.famille::before {
+    content: url("../../img/Emojis/Famille\ icone.svg");
+}
+
+.coeur-brise::before {
+    content: url("../../img/Emojis/Coeur\ brisé\ icone.svg");
+}
+.bonheur::before {
+    content: url("../../img/Emojis/Rire\ icone.svg");
+}
+.oh-merde::before {
+    content: url("../../img/Emojis/Poop\ icone.svg");
+}
+.amour::before {
+    content: url("../../img/Emojis/Coeur\ icone.svg");
+}
+.coup-de-gueule::before {
+    content: url("../../img/Emojis/Enervé\ icone.svg");
+}
+.la-fete::before {
+    content: url("../../img/Emojis/Fête\ icone.svg");
+}
+
+.meteo {
+    position: relative;
+    left: 2rem;
+    width: calc(100vw - 4rem);
+    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+    border: dashed 1px;
+    border-radius: 50%;
+}
+.meteo .item {
+    display: block;
+    position: absolute;
+    top: 8rem;
+    left: 7.5rem;
+}
+/* Based on stackoverflow solution : https://stackoverflow.com/a/12817454/5016557 */
+/* .meteo .item:before { display: block; width: 100%; } */
+.deg0 { transform: translate(7rem); } /* 7rem = half the width of the wrapper */
+.deg90 { transform: rotate(90deg) translate(-7rem) rotate(-90deg); }
+.deg135 { transform: rotate(135deg) translate(7rem) rotate(-135deg); }
+.deg180 { transform: translate(-7rem); }
+.deg225 { transform: rotate(225deg) translate(7rem) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(7rem) rotate(-315deg); }
+
+
+.meteo .item::before {
+    width: 4rem;
+    margin: 0;
+    scale: 1.25;
+}
+
+.soleil::before {
+    content: url("../../img/Méteo Parcours personnalisé/Sunny_Day.svg");
+}
+.nuageux::before {
+    content: url("../../img/Méteo Parcours personnalisé/Cloudy_Day.svg");
+}
+.arc-en-ciel::before {
+    content: url("../../img/Méteo Parcours personnalisé/Rainbow.svg");
+}
+.pluie::before {
+    content: url("../../img/Méteo Parcours personnalisé/Pouring_Rain.svg");
+}
+.nuage::before {
+    content: url("../../img/Méteo Parcours personnalisé/Cloud.svg");
+}
+.eclair::before {
+    content: url("../../img/Méteo Parcours personnalisé/Thunder.svg");
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+}
+
+.page.active {
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    left: 0;
+}
+.page.inactive {
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    left: -100vw;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 70vh ;
+    left: calc(50vw - 17px);
+}
+.page-step {
+   display: inline-block;
+   width: 10px;
+   height: 5px;
+   border-radius: 3px;
+   opacity: 0.28;
+   transition: width 0.5s ease-in-out;
+}
+
+.page-step.active {
+    transition: width 0.5s ease-in-out;
+    width: 20px;
+    opacity: 1;
+}
+.purple {
+    background-color: rgb(var(--purple));
+}
+.blue {
+    background-color: rgb(var(--blue));
+}
+.pink {
+    background-color: rgb(var(--pink));
+}
+
+.meteo .subject:checked {
+    scale: 2;
+ }
+.meteo .subject:checked {
+    transition: all 0.3s;
+}

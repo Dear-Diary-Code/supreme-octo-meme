@@ -22,7 +22,7 @@ ul {
      top: 70vh ;
      left: calc(50vw - 31px);
 }
-li {
+.page-step {
     display: inline-block;
     width: 10px;
     height: 5px;
@@ -68,7 +68,7 @@ li {
     opacity: 1;
     left: -100vw;
 }
-li.active {
+.page-step.active {
     transition: width 0.5s ease-in-out;
     width: 20px;
     opacity: 1;
