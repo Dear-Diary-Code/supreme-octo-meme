@@ -32,7 +32,7 @@ h3 {
 }
 
 p {
-  display: inline;
+  display: inline-block;
   margin: 8px;
   padding-left : 8px;
 }
@@ -41,15 +41,27 @@ p {
   display: flex;
   background: rgba(168, 178, 244, 0.13);
   position: relative;
-  margin: 16px;
-  top: 3.5rem;
+  margin-left: 16px;
+  margin-right: 50px;
+  top: 4.5rem;
+  border-radius: 5px;
 }
+
+/* .hashtag {
+  background: rgba(128, 166, 231, 0.52);
+  display: inline;
+  padding-left: 6px;
+  justify-content: flex-start;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 15px;
+  margin-left: 16px;
+} */
 
 .ecrire1 {
  margin-left:  10px;
 }
   .boule1 {
-    display: flex;
     background: rgba(168, 178, 244, 0.13);
     border-radius: 5px;
     position: relative;
@@ -61,10 +73,8 @@ p {
     background: rgba(168, 178, 244, 0.13);
     border-radius: 5px;
     position: absolute;
-    /* width: 338px;
-    height: 200px; */
     margin: 16px;
-    top: 415px;
+    top: 357px;
 }
 
 .boule3 {
@@ -79,11 +89,14 @@ p {
 
 .mur {
 display: table;
-justify-content: flex-start;
-top: 6.5rem;
 position: relative;
+top: 6.5rem;
 }
 
+.icone {
+margin-left: 16px;
+
+}
 /* .bouton {
 display: flex;
 justify-content: flex-end;
@@ -103,7 +116,7 @@ justify-content: flex-end;
   height: 20px;
   position: relative;
   right: -313px;
-  top: 4px;
+  top: 19px;
 }
 
 .n2 {
@@ -114,6 +127,20 @@ justify-content: flex-end;
   padding-bottom: 4px;
   padding-top: 4px;
   border-radius: 10px;
+}
+.n3 {
+color: #B6B3B3;
+display: inline;
+}
+
+.n1 {
+  background: rgba(128, 166, 231, 0.52);
+  display: inline-block;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 15px;
 }
 
 /* .skrt {
