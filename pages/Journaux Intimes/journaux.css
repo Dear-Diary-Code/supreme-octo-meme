@@ -27,10 +27,12 @@ h3 {
   display: table-cell;
   vertical-align: middle;
   position: relative;
-  right: -207px;
+  right: -150px;
+  top: 1rem;
 }
 
 p {
+  display: inline;
   margin: 8px;
   padding-left : 8px;
 }
@@ -78,15 +80,30 @@ p {
 .mur {
 display: table;
 justify-content: flex-start;
-top: 2rem;
+top: 6.5rem;
 position: relative;
 }
 
-.emoji {
+/* .bouton {
 display: flex;
 justify-content: flex-end;
-width: 21.18px;
-height: 20px;
+} */
+
+.selectionner {
+  background-color: #80A6E7;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  top: 4.5rem;
+  right: -242px;
+}
+
+.emoji {
+  display: flex;
+  width: 21.18px;
+  height: 20px;
+  position: relative;
+  right: -313px;
+  top: 4px;
 }
 
 .n2 {
