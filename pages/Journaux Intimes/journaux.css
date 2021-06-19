@@ -19,10 +19,23 @@
 
   h1 {
     position: absolute;  
-    top: 64px;
-    padding-left: 16px;
+    top: 2rem;
+    left: 1rem;
 }
 
+.ecrire {
+  display: flex;
+  justify-content: flex-start;
+  background: rgba(168, 178, 244, 0.13);
+  border-radius: 5px;
+  position: relative;
+  margin: 16px;
+  top: 2.5rem;
+}
+
+.emoji {
+ margin-left:  10px;
+}
   .boule1 {
     display: flex;
     background: rgba(168, 178, 244, 0.13);
@@ -55,10 +68,7 @@
 .n2 {
   color: #B6B3B3;
   display: inline;
-  padding-right: 16px;
-  padding-bottom: 4px;
-  padding-top: 4px;
-  border-radius: 10px;
+  margin: 10px;
 }
 
 /* .skrt {

@@ -13,26 +13,29 @@ body {
     left: calc(50vw - 39px);
 }
 h2 {
-    width: 100vw;
-    position: absolute;
-    top: 12vh;
     text-align: center;
+    width: calc(100vw - 4rem);
+    position: absolute;
+    top: 16vh;
+    left: calc(50vw - (100vw - 4rem)/2);
 }
 .theme {
     padding: 0;
     margin: 0;
     position: relative;
-    left: 2rem;
     width: calc(100vw - 4rem);
+    left: calc(50vw - (100vw - 4rem) / 2);
+    padding-left: 1rem;
     top: 28vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
+    row-gap: 0.75rem;
 
 }
  label {
     text-align: center;
     font-family: 'Poppins-Regular';
+    font-size: 0.85rem;
     color: white;
     position: relative;
     top: 1rem;
@@ -70,6 +73,7 @@ h2 {
 }
 
 .item {
+    cursor: pointer;
     border-radius: 100%;
     width: 4.5rem;
     height: 4.5rem;
@@ -170,12 +174,20 @@ h2 {
 .deg180 { transform: translate(-7rem); }
 .deg225 { transform: rotate(225deg) translate(7rem) rotate(-225deg); }
 .deg315 { transform: rotate(315deg) translate(7rem) rotate(-315deg); }
+.item.center {
+    width: 7rem;
+    height: 7rem;
+    padding: 0;
+    top:8rem;
+    left: calc(50vw - 5.5rem);
+}
 
-
-.meteo .item::before {
-    width: 4rem;
-    margin: 0;
-    scale: 1.25;
+#meteo-texte {
+    position: relative;
+    top: 60vh;
+    text-align: center;
+    width: 60vw;
+    left: 20vw;
 }
 
 .soleil::before {
@@ -237,15 +249,6 @@ ul {
     transition: width 0.5s ease-in-out;
     width: 20px;
     opacity: 1;
-}
-.purple {
-    background-color: rgb(var(--purple));
-}
-.blue {
-    background-color: rgb(var(--blue));
-}
-.pink {
-    background-color: rgb(var(--pink));
 }
 
 .meteo .subject:checked {
