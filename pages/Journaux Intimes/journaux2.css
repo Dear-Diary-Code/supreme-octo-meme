@@ -1,22 +1,91 @@
 @import '../../style.css';
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+}
+
+.block {
+    position: absolute;
+    top: 186px;
+    left: 1rem;
+    right: 1rem; 
+}
 
 .feu {
-    position: absolute;
+    position: relative;
+    display: table;
+    padding: 1rem;
+    background: rgba(168, 178, 244, 0.13);
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+    width: 311px;
+}
+
+.feu:hover {
+    background-color: #80A6E7;
 }
 
 .bouteille {
-    position: absolute;
+    position: relative;
+    padding: 1rem;
+    background: rgba(168, 178, 244, 0.13);
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    display: table;
+}
+
+.bouteille:hover {
+    background-color: #80A6E7;
 }
 
 .chiffonner {
-    position: absolute;
+    position: relative;
+    padding: 1rem;
+    background: rgba(168, 178, 244, 0.13);
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    display: table;
+    width: 311px;
 }
 
-img{
-    position: relative;
+.chiffonner:hover {
+    background-color: #80A6E7;
 }
+
+.img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
 
 h2 {
-    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1rem;
 }
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    min-height: 80px;
+    align-items: center;
+    background-color: #05152C;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    border-top: 1px rgba(128,166,231, .33) solid;
+  }
