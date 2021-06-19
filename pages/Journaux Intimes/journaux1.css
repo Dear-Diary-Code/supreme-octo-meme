@@ -100,8 +100,7 @@ margin-left: 16px;
 
 
 .button {
-display: flex;
-justify-content: space-around;
+position: center;
 } 
 
 .selectionner {
