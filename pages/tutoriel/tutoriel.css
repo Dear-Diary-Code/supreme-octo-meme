@@ -3,7 +3,7 @@
 h2 {
     width: 100vw;
     position: absolute;
-    top: calc(30vh + 6.9rem);
+    top: calc(30vh + 7.9rem);
     text-align: center;
 }
 p {
@@ -65,7 +65,7 @@ ul {
 }
 .page.inactive {
     transition: all 0.5s ease-in-out;
-    opacity: 1;
+    opacity: 0;
     left: -100vw;
 }
 .page-step.active {

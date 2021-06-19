@@ -21,12 +21,12 @@
                 <label><input type="checkbox" name="subject" class="ns item famille">Famille</label>
             </div>
             <div class="theme"  id="p2">
-                <label><input type="checkbox" name="subject" class="ns item coeur-brise">Tristesse</label>
-                <label><input type="checkbox" name="subject" class="ns item bonheur">Content</label>
-                <label><input type="checkbox" name="subject" class="ns item oh-merde">Sexe</label>
-                <label><input type="checkbox" name="subject" class="ns item amour">Famille</label>
-                <label><input type="checkbox" name="subject" class="ns item coup-de-gueule">Ecole</label>
-                <label><input type="checkbox" name="subject" class="ns item la-fete">Colère</label>
+                <label><input type="checkbox" name="subject" class="ns item coeur-brise">Coeur brisé</label>
+                <label><input type="checkbox" name="subject" class="ns item bonheur">Bonheur</label>
+                <label><input type="checkbox" name="subject" class="ns item oh-merde">Oh merde</label>
+                <label><input type="checkbox" name="subject" class="ns item amour">Amour</label>
+                <label><input type="checkbox" name="subject" class="ns item coup-de-gueule">Coup de gueule</label>
+                <label><input type="checkbox" name="subject" class="ns item la-fete">La fête</label>
             </div>  
         </div>
         <button id="btn1" class="changer">Changer</button>
@@ -34,13 +34,14 @@
     <section class="page">
         <h2 class="gradient-text">Sélectionne ta météo d'aujourd’hui</h2>
         <div class="theme meteo"  id="p3">
-            <input type="radio" name="meteo" class="ns item center soleil">
-            <input type="radio" name="meteo" class="ns item deg0 nuageux">
-            <input type="radio" name="meteo" class="ns item deg90 arc-en-ciel">
-            <input type="radio" name="meteo" class="ns item deg180 pluie">
-            <input type="radio" name="meteo" class="ns item deg225 nuage">
-            <input type="radio" name="meteo" class="ns item deg315 eclair">
+            <input type="radio" name="meteo" data-name="soleil" data-degree="center" class="ns item center soleil last-checked" checked="checked">
+            <input type="radio" name="meteo" data-name="nuageux" data-degree="deg0" class="ns item deg0 nuageux">
+            <input type="radio" name="meteo" data-name="arc-en-ciel" data-degree="deg90" class="ns item deg90 arc-en-ciel">
+            <input type="radio" name="meteo" data-name="pluie" data-degree="deg180" class="ns item deg180 pluie">
+            <input type="radio" name="meteo" data-name="nuage" data-degree="deg225" class="ns item deg225 nuage">
+            <input type="radio" name="meteo" data-name="eclair" data-degree="deg315" class="ns item deg315 eclair">
         </div>
+        <p id="meteo-texte">Je me sens ensoleillé, je suis prêt à aider les autres !</p>
     </section>
     <ul class="">
         <li class="page-step purple active">&nbsp;</li>

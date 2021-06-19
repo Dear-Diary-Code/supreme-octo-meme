@@ -56,3 +56,28 @@ function simulateClick() {
     // on déclenche l'évenement sur le lien (en gros on clique virtuellement dessus)
     redirectLinkDom.dispatchEvent(event);
   }
+
+const meteoItems = document.querySelectorAll('.meteo .item');
+const meteoTexte = document.getElementById('meteo-texte');
+const meteoTextes = {
+    'soleil': 'Je me sens ensoleillé, je suis prêt à aider les autres !',
+    'nuageux': 'Le soleil est là, mais il y a des nuages à l\'horizon...',
+    'arc-en-ciel': 'Après la pluie le beau temps, je sors d\'une periode désagréable',
+    'pluie': 'Je ne suis pas dans une phase positive',
+    'nuage': 'Pas de joie ni de tristesse particulière',
+    'eclair': 'Je ressent de la détresse, aidez-moi !'
+};
+
+meteoItems.forEach(function(item) {
+    item.addEventListener('change', function(event) {
+        const lastChecked = document.querySelector('.last-checked');
+        lastChecked.dataset.degree = event.target.dataset.degree;
+        lastChecked.classList.remove('center');
+        lastChecked.classList.remove('last-checked');
+        lastChecked.classList.add(lastChecked.dataset.degree);
+        meteoTexte.innerText = meteoTextes[event.target.dataset.name];
+        event.target.classList.remove(event.target.dataset.degree);
+        event.target.classList.add('center');
+        event.target.classList.add('last-checked');
+    })
+})
