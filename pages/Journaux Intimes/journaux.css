@@ -80,7 +80,7 @@ p {
 .mur {
 display: table;
 justify-content: flex-start;
-top: 6rem;
+top: 6.5rem;
 position: relative;
 }
 
@@ -90,18 +90,20 @@ justify-content: flex-end;
 } */
 
 .selectionner {
-background-color: #80A6E7;
-padding: 0.25rem 0.5rem;
-border-radius: 10px;
-top: 4.5rem;
-margin-right: 16px;
+  background-color: #80A6E7;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  top: 4.5rem;
+  right: -242px;
 }
 
 .emoji {
-display: flex;
-justify-content: flex-end;
-width: 21.18px;
-height: 20px;
+  display: flex;
+  width: 21.18px;
+  height: 20px;
+  position: relative;
+  right: -313px;
+  top: 4px;
 }
 
 .n2 {
