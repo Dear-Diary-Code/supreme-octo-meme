@@ -23,17 +23,29 @@
     left: 1rem;
 }
 
-.ecrire {
-  display: flex;
-  justify-content: flex-start;
-  background: rgba(168, 178, 244, 0.13);
-  border-radius: 5px;
+h3 {
+  display: table-cell;
+  vertical-align: middle;
   position: relative;
-  margin: 16px;
-  top: 2.5rem;
+  right: -150px;
+  top: 1rem;
 }
 
-.emoji {
+p {
+  display: inline;
+  margin: 8px;
+  padding-left : 8px;
+}
+
+.ecrire {
+  display: flex;
+  background: rgba(168, 178, 244, 0.13);
+  position: relative;
+  margin: 16px;
+  top: 3.5rem;
+}
+
+.ecrire1 {
  margin-left:  10px;
 }
   .boule1 {
@@ -65,10 +77,41 @@
     top: 565px;
 }
 
+.mur {
+display: table;
+justify-content: flex-start;
+top: 6rem;
+position: relative;
+}
+
+/* .bouton {
+display: flex;
+justify-content: flex-end;
+} */
+
+.selectionner {
+background-color: #80A6E7;
+padding: 0.25rem 0.5rem;
+border-radius: 10px;
+top: 4.5rem;
+margin-right: 16px;
+}
+
+.emoji {
+display: flex;
+justify-content: flex-end;
+width: 21.18px;
+height: 20px;
+}
+
 .n2 {
   color: #B6B3B3;
   display: inline;
   margin: 10px;
+  padding-right: 16px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  border-radius: 10px;
 }
 
 /* .skrt {
