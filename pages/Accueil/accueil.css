@@ -1,49 +1,24 @@
 @import '../../style.css';
 
-:root {
-    /* allow to use dynamic alpha apply with rgb() (no alpha) or rgba() (with alpha) */
-    --purple: 180, 180, 248;
-    --blue: 128, 166, 231;
-    --pink: 241, 196, 217;
-    --grey: 249, 246, 246; 
-}
-
 h1 {
     position: absolute;  
-    top: 32px;
-    padding-left: 16px;
+    top: 2rem;
+    left: 1rem;
 }
 
-h2{
-    color: #FFF;
-} 
-
 .date {
-    top: 66px;
     position: relative;
-    padding-left: 16px;
+    top: 5rem;
 }
 
 .recommandations {
-    font-size: 1.375rem;
-    font-family: 'Poppins-SemiBold';
     position: relative;
-    left: 16px;
-    top: 64px;
-    color: #FFFFFF;
+    left: 1rem;
+    top: 5rem;
 
-}
-
-h4 {
-    font-size: 0.9375rem;
-    font-family: 'Poppins-Medium';
-    color: #FFFFFF;
 }
 
 p {
-    font-size: 0.875rem;
-    font-family: 'Poppins-Regular';
-    color: white;
     overflow: hidden;
 }
 
@@ -63,9 +38,8 @@ p {
     background: rgba(168, 178, 244, 0.13);
     border-radius: 5px;
     position: absolute;
-    margin: 16px;
-    top: 150px;
-    color: #fff;
+    left: 1rem;
+    top: 10.5rem;
 }
 
 .block0-presentation {
@@ -78,7 +52,6 @@ p {
 
 .block1-presentation {
     position: relative;
-    margin: 8px;
     padding-left : 8px;
     display: flex;
     height : 28px; 
@@ -103,16 +76,21 @@ p {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 70vh ;
+    top: 41vh ;
     left: calc(50vw - 31px);
 }
-.contenu {
-   display: inline-block;
-   width: 10px;
-   height: 5px;
-   border-radius: 3px;
-   opacity: 0.28;
-   transition: width 0.5s ease-in-out;
+.page-step {
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    border-radius: 3px;
+    opacity: 0.28;
+    transition: width 0.5s ease-in-out;
+}
+.page-step.active {
+    transition: width 0.5s ease-in-out;
+    width: 20px;
+    opacity: 1;
 }
 
 .block1 {
@@ -197,6 +175,7 @@ p {
     background-color: #05152C;
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100vw;
     border-top: 1px rgba(128,166,231, .33) solid;
   }
