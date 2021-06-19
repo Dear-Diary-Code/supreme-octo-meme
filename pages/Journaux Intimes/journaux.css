@@ -52,6 +52,15 @@
     top: 565px;
 }
 
+.n2 {
+  color: #B6B3B3;
+  display: inline;
+  padding-right: 16px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  border-radius: 10px;
+}
+
 /* .skrt {
 
     align-content: space-between;
