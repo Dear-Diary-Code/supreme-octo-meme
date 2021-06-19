@@ -1,0 +1,99 @@
+@import url('../../../style.css');
+
+h3, a {
+    display: inline-block;
+    position: relative;
+}
+h3 {
+    top: 2rem;
+    left: 2rem;
+}
+a {
+    text-decoration: none;
+    font-family: 'Poppins-Medium';
+    color: white;
+    font-size: 1.375rem;
+    top: 2.1rem;
+    left: 1rem;
+}
+.icone-emotion {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 3rem;
+    list-style: none;
+    font-family: 'Poppins-Regular';
+    font-size: 0.70rem;
+    text-align: center;
+    display: grid;
+    width: 90vw ;
+    left: 5vw;
+    grid-template-columns: repeat(5, 1fr);
+    color: white;
+}
+.emotion {
+    cursor: pointer;
+    background-color: royalblue;
+    appearance: none;
+    scale: 0.8;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    margin: 0;
+    display: inline-block;  
+}
+.emotion:checked {
+    background-color: rgb(201, 210, 236);
+}
+.write-your-text{
+    background-color: #1A2946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 84vw;
+    height: 45vh;
+    position: relative;
+    top: 5rem;
+    left: 7vw;
+}
+
+
+
+
+.colere::before {
+    content: url("../../../img/Emojis/Colère\ icone.svg");
+}
+.content::before {
+    content: url("../../../img/Emojis/Content\ icone.svg");
+}
+.ecole::before {
+    content: url("../../../img/Emojis/Ecole\ icone.svg");
+}
+.sexe::before {
+    content: url("../../../img/Emojis/Sexe\ icone.svg");
+}
+.tristesse::before {
+    content: url("../../../img/Emojis/Tristesse\ icone.svg");
+}
+.famille::before {
+    content: url("../../../img/Emojis/Famille\ icone.svg");
+}
+
+.coeur-brise::before {
+    content: url("../../../img/Emojis/Coeur\ brisé\ icone.svg");
+}
+.bonheur::before {
+    content: url("../../../img/Emojis/Rire\ icone.svg");
+}
+.oh-merde::before {
+    content: url("../../../img/Emojis/Poop\ icone.svg");
+}
+.amour::before {
+    content: url("../../../img/Emojis/Coeur\ icone.svg");
+}
+.coup-de-gueule::before {
+    content: url("../../../img/Emojis/Enervé\ icone.svg");
+}
+.la-fete::before {
+    content: url("../../../img/Emojis/Fête\ icone.svg");
+}
