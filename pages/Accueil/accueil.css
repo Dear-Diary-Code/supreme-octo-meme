@@ -8,7 +8,9 @@ h1 {
 
 .date {
     position: relative;
-    top: 5rem;
+    top: 4rem;
+    left: 1px;
+    
 }
 
 .recommandations {
@@ -27,9 +29,9 @@ p {
     margin: 16px;
 }
 
-.titre2 {
+.decouvir-les-journaux {
     position: absolute;
-    top: 340px;
+    top: 45vh;
     padding-left: 16px;
 }
 
@@ -38,8 +40,10 @@ p {
     background: rgba(168, 178, 244, 0.13);
     border-radius: 5px;
     position: absolute;
+    padding: 8px;
+    margin-right: 1rem;
     left: 1rem;
-    top: 10.5rem;
+    top: 9.8rem;
 }
 
 .block0-presentation {
@@ -58,11 +62,16 @@ p {
 }
 
 .block1-image {
+ position: relative;
+ top: 15px ;
+ left: 7px;
  width: 22px;
  height: 22px;
 }
 
 .hashtag {
+    position: relative;
+    top: 10px;
     margin-left: 8px;
 }
 
@@ -76,7 +85,7 @@ p {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 41vh ;
+    top: 42vh ;
     left: calc(50vw - 31px);
 }
 .page-step {
@@ -99,7 +108,7 @@ p {
     position: absolute;
     right: 16px;
     left: 16px;
-    top: 398px;
+    top: 405px;
 }
 
 .block2 {
@@ -109,35 +118,47 @@ p {
     right : 16px;
     height: 200px;
     left: 16px;
-    top: 640px;
+    top: 655px;
+    padding-bottom: 6rem;
 }
 
 .unesalade {
     position : relative; 
-    top : -16px;
-    left : 12px;
+    top : 15px;
+    left : 18px;
+}
+
+.heart-broken {
+    position: relative;
+    top: 15px;
+    right: -7.5rem;
+    scale: 0.8;
+
 }
 
 .pic {
     position : relative;
-    margin-left: 8px;
+    top: 15px;
+    margin-left: 12px;
     width: 95px;
     height: 95px;
+    scale: 1.1;
 }
 
 .block0-texte {
     position: relative;
+    top: 0px;
     bottom: 16px;
 }
 
 .n1 {
     background: rgba(128, 166, 231, 0.52);
-    display: inline;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 4px;
-    padding-top: 4px;
-    border-radius: 10px;
+    display: inline-block;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-radius: 15px;
 
 }
 
@@ -148,15 +169,20 @@ p {
 }
 
 .n2 {
+    position: relative;
+    font-size: 12px;
+    bottom: 5px;
     color: #B6B3B3;
     display: inline;
     padding-right: 16px;
     padding-bottom: 4px;
-    padding-top: 4px;
     border-radius: 10px;
 }
 
 .n3 {
+    position: relative;
+    font-size: 12px;
+    bottom: 5px;
     color: #B6B3B3;
     display: inline;
     padding-right: 8px;
