@@ -31,7 +31,10 @@
   position: relative;
   margin: 16px;
   top: 2.5rem;
+}
 
+.emoji {
+ margin-left:  10px;
 }
   .boule1 {
     display: flex;
