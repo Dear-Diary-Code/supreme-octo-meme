@@ -21,6 +21,30 @@ h4 {
     padding: 0.75rem;
 }
 
+.alerte {
+    position: relative;
+    display: table;
+    top: 5rem;
+}
+
+.n2 {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1rem;
+}
+
+.block {
+    position: relative;
+    top : 6rem;
+    background:rgba(128,166,231, .33);
+    margin-left : 3rem; 
+    margin-right : 2rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+
 
 .nav-list {
     list-style: none;
