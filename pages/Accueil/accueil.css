@@ -29,9 +29,9 @@ p {
     margin: 16px;
 }
 
-.decouvir-les-journaux {
+.decouvrir-les-journaux {
     position: absolute;
-    top: 49vh;
+    top: 45vh;
     padding-left: 16px;
 }
 
@@ -85,7 +85,7 @@ p {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 45vh ;
+    top: 43vh ;
     left: calc(50vw - 31px);
 }
 .page-step {

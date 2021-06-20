@@ -23,91 +23,44 @@
     left: 1rem;
 }
 
-h3 {
-  display: table-cell;
-  vertical-align: middle;
-  position: relative;
-  right: -150px;
-  top: 1rem;
-}
 
 .text {
   margin: 0 1rem 1rem 1rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .ecrire {
   display: flex;
   background: rgba(168, 178, 244, 0.13);
   position: relative;
-  margin-left: 16px;
-  margin-right: 50px;
+  width: 75vw;
+  margin: 0.75rem 0;
+  left: 1rem;
   top: 4.5rem;
-  border-radius: 5px;
-}
-
-/* .hashtag {
-  background: rgba(128, 166, 231, 0.52);
-  display: inline;
-  padding-left: 6px;
-  justify-content: flex-start;
-  padding-bottom: 2px;
-  padding-top: 2px;
   border-radius: 15px;
-  margin-left: 16px;
-} */
+}
 
 .ecrire1 {
  margin-left:  10px;
 }
 
-  .boule1 {
+.tuile {
     background: rgba(168, 178, 244, 0.13);
-    border-radius: 5px;
+    border-radius: 15px;
     position: relative;
     margin: 1rem;
     top: 4rem;
-    display: table;
-  }
-
-  .boule2 {
-    background: rgba(168, 178, 244, 0.13);
-    border-radius: 5px;
-    position: absolute;
-    margin: 1rem 1rem 0 1rem;
-    top: 24rem;
-}
-
-.boule3 {
-    background: rgba(168, 178, 244, 0.13);
-    border-radius: 5px;
-    position: absolute;
-    margin: 1rem;
-    top: 39rem;
 }
 
 
 .mur {
-display: table;
 position: relative;
-top: 6.5rem;
+top: 6rem;
+left: 0.5rem;
 }
 
 .icone {
 margin-left: 16px;
-}
-
-/* .bouton {
-display: flex;
-justify-content: flex-end;
-} */
-
-.selectionner {
-  background-color: #80A6E7;
-  padding: 0.25rem 0.5rem;
-  border-radius: 10px;
-  top: 4.5rem;
-  right: -242px;
 }
 
 .emoji {
@@ -119,13 +72,20 @@ justify-content: flex-end;
   top: 19px;
 }
 
+.new-page {
+  display: block;
+  text-decoration: none;
+  font-family: 'Poppins-Regular';
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  color: #B6B3B3;
+  display: inline;
+  border-radius: 10px;
+}
 .n2 {
   color: #B6B3B3;
   display: inline;
-  margin: 10px;
-  padding-right: 16px;
-  padding-bottom: 4px;
-  padding-top: 4px;
+  padding-left: 1rem;
   border-radius: 10px;
 }
 .n3 {
@@ -146,4 +106,61 @@ display: inline;
 
 body {
   height : 60rem;
+}
+
+.selectionner {
+  transition: all 0.3s;
+  position: relative;
+  border: none;
+  color: white;
+  font-size: 0.875rem;
+  font-family: 'Poppins-Regular';
+  background-color: #80A6E7;
+  padding: 0.25rem 0.5rem;
+  border-radius: 15px;
+  top: 4.5rem;
+  right: calc(-100vw + 102px + 1rem);
+}
+
+.button {
+  transition: all 0.3s;
+  width: 100vw;
+  height: 20vh;
+  background-color: rgba(155, 155, 155, 0.50);
+  position: fixed;
+  bottom: -10vh;
+}
+
+.active {
+  bottom: 0vh;
+}
+
+.cancel {
+  background-color: rgba(var(--purple), 0.8);
+  right: calc(-100vw + 70px + 1rem);
+}
+
+.selected {
+  box-shadow: inset 0 0  0.25rem 0.1rem  #80A6E7;
+}
+
+.button button,
+.button a {
+  z-index: 100;
+  padding: 0.25rem 0.5rem;
+  margin: 0;
+  border: none;
+  border-radius: 15px;
+  font-size: 0.875rem;
+  font-family: 'Poppins-Regular';
+  color: white;
+  position: relative;
+  top: 1rem;
+}
+.button a:first-child {
+  text-decoration: none;
+  left: 1rem;
+}
+.button button:last-child {
+  right: -6.7rem;
 }

@@ -178,12 +178,14 @@ a {
     left: 1.25rem;
 }
 
-.btn-public {
+a.btn-public {
+    display: inline-block;
+    width: 3.5rem;
     transition: all 0.3s;
     cursor: pointer;
     position: absolute;
     top: 87vh;
-    right: 2rem;
+    left: 16em;
     font-family: 'Poppins-Medium';
     font-size: 1rem;
     padding: 3px 15px;

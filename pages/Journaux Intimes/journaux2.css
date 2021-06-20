@@ -19,52 +19,37 @@ h1 {
     right: 1rem; 
 }
 
-.feu {
-    position: relative;
-    display: table;
+.tuile {
+    transition: all 0.3s;
+    width: calc(100vw - 6rem);
     padding: 1rem;
-    background: rgba(168, 178, 244, 0.13);
-    border-radius: 5px;
-    margin-bottom: .5rem;
-    margin-right: 1rem;
-    width: 311px;
-}
-
-.feu:hover {
-    background-color: #80A6E7;
-}
-
-.bouteille {
     position: relative;
-    padding: 1rem;
+    left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
     background: rgba(168, 178, 244, 0.13);
-    border-radius: 5px;
-    margin-bottom: .5rem;
-    display: table;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
-
-.bouteille:hover {
-    background-color: #80A6E7;
+.tuile img,
+.tuile p {
+    display: inline-block;
 }
-
-.chiffonner {
-    position: relative;
-    padding: 1rem;
-    background: rgba(168, 178, 244, 0.13);
-    border-radius: 5px;
-    margin-bottom: .5rem;
-    display: table;
-    width: 311px;
+.tuile p {
+    width: 100%;
+    text-align: center;
+    margin-left: 1rem;
 }
-
-.chiffonner:hover {
+.tuile:hover, .tuile:active {
     background-color: #80A6E7;
 }
 
 .img {
     position: relative;
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    height: auto;
 }
 
 
@@ -75,9 +60,11 @@ h2 {
 }
 
 .infoos {
+    width: calc(100vw - 4rem);
     position: relative;
+    left: 2rem;
+    font-size: 0.875;
     top : 34.5rem;
-    padding: 1rem;
 }
 
 .fleche {

@@ -54,6 +54,9 @@ p {
     font-weight: 400;
     color: white;
 }
+button {
+    cursor: pointer;
+}
 
 .purple {
     background-color: rgb(var(--purple));
