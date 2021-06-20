@@ -1,5 +1,10 @@
 @import '../../style.css';
 
+h1 {
+    position: absolute;
+    top: 4.5rem;
+    padding: 0 1rem;
+}
 
 a {
     display: inline-block;
@@ -22,14 +27,29 @@ a {
 }
 
 .creator {
-    display: inline;
-
+    position: relative;
+    display: table;
+    top: 6rem;
 }
 
+.n2 {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1rem;
+}
 
+.publication {
+    font-size: 10px;
+    color: #B6B3B3;
+}
 
-
-
+.contenu {
+    position: absolute;
+    top: 10rem;
+    display: inline-block;
+    margin-left: 16px;
+    margin-right: 16px;
+}
 
 .nav-list {
     list-style: none;
