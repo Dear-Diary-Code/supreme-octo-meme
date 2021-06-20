@@ -2,46 +2,77 @@
 
 .categorie {
     position: relative;
-    top: 4rem;
+    top: 6rem;
+    left: 2rem;
 }
 
 .underline {
     text-decoration: underline;
+    font-family: 'Poppins-SemiBold';
     color: #80A6E7;
+
 }
 
-h1 {
+h2 {
     position: absolute;  
     top: 2rem;
-    padding: 0 1rem;
+    left: 2rem;
 }
 
 h4 {
-    display: table-cell;
-    padding: 0.75rem;
+    position: relative;
+    font-family: 'Poppins-Regular';
+    display: inline-block;
+    font-size: 0.875rem;
+}
+
+h4:nth-of-type(2) {
+    left: 0.75rem;
 }
 
 .alerte {
     position: relative;
-    display: table;
-    top: 5rem;
+    display: flex;
+    align-items: center;
+    top: 8rem;
+    left: 2rem;
 }
-
-.n2 {
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 1rem;
+.alerte p {
+    position: relative;
+    left: 1rem;
 }
 
 .block {
     position: relative;
-    top : 6rem;
-    background:rgba(128,166,231, .33);
-    margin-left : 3rem; 
-    margin-right : 2rem;
-    padding: 0.25rem 0.5rem;
+    top : 10rem;
+    left: 3.25rem;
+    background:#1A2946;
+    text-align: center;
+    width:75vw;
+    height: 4rem;
+    padding: 0 0.2rem 0.1rem 0.2rem;
     border-radius: 10px;
     margin-bottom: 1rem;
+}
+
+.block p {
+    margin: 0;
+    position: relative;
+    top: -0.5rem
+}
+
+.block::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #80A6E7;
+    z-index: 1;
+    position: relative;
+    left: -45vw;
+    top: 1.25rem;
+    border-radius: 5px;
+
 }
 
 

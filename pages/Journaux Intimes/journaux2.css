@@ -5,10 +5,10 @@ body {
     padding: 0;
 }
 
-h1 {
+h2 {
     position: absolute;
     top: 2rem;
-    left: 2.5rem;
+    left: 2rem;
     right: 2rem;
 }
 
@@ -28,7 +28,6 @@ h1 {
     margin-bottom: 1rem;
     border-radius: 20px;
     background: rgba(168, 178, 244, 0.13);
-    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -37,10 +36,14 @@ h1 {
 .tuile p {
     display: inline-block;
 }
-.tuile p {
+.tuile p{
     width: 100%;
     text-align: center;
     margin-left: 1rem;
+}
+.tuile a:nth-of-type(2) {
+    width: 100%;
+    text-align: center;
 }
 .tuile:hover, .tuile:active {
     background-color: #80A6E7;
