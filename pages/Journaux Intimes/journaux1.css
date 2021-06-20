@@ -61,12 +61,14 @@ p {
 .ecrire1 {
  margin-left:  10px;
 }
-  .boule1 {
-    background: rgba(168, 178, 244, 0.13);
+
+.boule1 {
+      
+  background: rgba(168, 178, 244, 0.13);
     border-radius: 5px;
     position: relative;
     margin: 16px;
-    top: 64px;
+    top: 95px;
   }
 
   .boule2 {
@@ -74,7 +76,7 @@ p {
     border-radius: 5px;
     position: absolute;
     margin: 16px;
-    top: 357px;
+    top: 365px;
 }
 
 .boule3 {
@@ -100,7 +102,8 @@ margin-left: 16px;
 
 
 .button {
-position: center;
+position: absolute;
+top: 200px;
 } 
 
 .selectionner {
