@@ -11,20 +11,30 @@
     <a href=""><</a><h3>Écrire une nouvelle page</h3>
 <form action="" class="new-page">
     <ul class="icone-emotion">
-        <li><input type="checkbox" class="emotion coeur-brise" name="emotion">Coeur brisé</li>
-        <li><input type="checkbox" class="emotion tristesse" name="emotion">Triste</li>
-        <li><input type="checkbox" class="emotion " name="emotion">Surprise</li>
-        <li><input type="checkbox" class="emotion colere" name="emotion">Excité</li>
-        <li><input type="checkbox" class="emotion " name="emotion">Colère</li>
-        <li><input type="checkbox" class="emotion " name="emotion">Surprise</li>
-        <li><input type="checkbox" class="emotion " name="emotion">Excité</li>
-        <li><input type="checkbox" class="emotion " name="emotion">Excité</li>
-        <li><input type="checkbox" class="emotion " name="emotion">Excité</li>
-        <li><input type="checkbox" class="emotion " name="emotion">Excité</li>
+        <li><input type="checkbox" class="emotion coeur-brise" name="emotion"><span>Coeur brisé</span></li>
+        <li><input type="checkbox" class="emotion tristesse" name="emotion"><span>Triste</span></li>
+        <li><input type="checkbox" class="emotion content" name="emotion"><span>Content</span></li>
+        <li><input type="checkbox" class="emotion colere" name="emotion"><span>Colère</span></li>
+        <li><input type="checkbox" class="emotion amour " name="emotion"><span>Amour</span></li>
+        <li><input type="checkbox" class="emotion coup-de-gueule" name="emotion"><span>Rage</span></li>
+        <li><input type="checkbox" class="emotion bonheur" name="emotion"><span>Bonheur</span></li>
+        <li><input type="checkbox" class="emotion surprise" name="emotion"><span>Surprise</span></li>
+        <li><input type="checkbox" class="emotion oh-merde" name="emotion"><span>Oups</span></li>
+        <li><input type="checkbox" class="emotion la-fete" name="emotion"><span>Festive</span></li>
     </ul>
     <textarea class="write-your-text" name="write-your-text" cols="30" rows="10" placeholder="Écrivez quelque chose..."></textarea>
-    <input type="text" name="" class="add-hashtag">
-    <input type="checkbox" name="" class="public-privite">
+    <div class="hashtag-container">
+        <ul class="hashtag-list">
+            <li>#Déprime</li>
+            <li>#NePasRépondre</li>
+        </ul>
+        <input type="text" name="" placeholder="#Ajouter un hashtag" class="add-hashtag">
+    </div>
+    <div class="swich-container">
+        <input type="checkbox" name="" class="ns public-private">
+        <p class="private">Privé</p>
+        <p class="public">Public</p>
+    </div>
     <button class="btn-public">Publier</button>
 </form>
 </body>

@@ -16,13 +16,19 @@ a {
     top: 2.1rem;
     left: 1rem;
 }
+
+.icone-emotion,
+.write-your-text,
+.write-your-text::placeholder {
+    font-family: 'Poppins-Regular';
+}
+
 .icone-emotion {
     padding: 0;
     margin: 0;
     position: relative;
     top: 3rem;
     list-style: none;
-    font-family: 'Poppins-Regular';
     font-size: 0.70rem;
     text-align: center;
     display: grid;
@@ -33,32 +39,157 @@ a {
 }
 .emotion {
     cursor: pointer;
-    background-color: royalblue;
     appearance: none;
-    scale: 0.8;
-    width: 48px;
-    height: 48px;
+    scale: 0.5;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100%;
     margin: 0;
-    display: inline-block;  
+    display: inline-block;
 }
-.emotion:checked {
-    background-color: rgb(201, 210, 236);
+.emotion:not(:checked),
+.emotion:not(:checked) + span {
+    opacity: 0.4;
+}
+.emotion:checked,
+.emotion:checked + span {
+    opacity: 1;
 }
 .write-your-text{
+    box-sizing: border-box;
+    resize: none;
     background-color: #1A2946;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
+    padding: 1rem;
     width: 84vw;
-    height: 45vh;
+    height: 43vh;
     position: relative;
     top: 5rem;
-    left: 7vw;
+    overflow: visible;
+    left: 8vw;
+    margin: 0;
+}
+
+.hashtag-container {
+    background-color: #1A2946;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    padding: 2px;
+    top: 4.9rem;
+    left: 8vw;
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 84vw;
+    height: 12vh;
+}
+.hashtag-list {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+    display: flex;
+    width:auto;
+}
+.hashtag-list li {
+    font-size: 0.7rem;
+    background: rgba(128, 166, 231, 0.52);
+    display: inline-block;
+    padding: 2px 12px;
+    border-radius: 15px;
+    font-family: 'Poppins-Regular';
+    margin-right: 5px;
+}
+.add-hashtag {
+    position: relative;
+    top: 1.2rem;
+    width: 8rem;
+    border: none;
+    font-size: 0.7rem;
+    background-color: #DDDFE3;
+    color: black;
+    display: inline-block;
+    padding: 2px 12px;
+    border-radius: 15px;
+    font-family: 'Poppins-Regular';
+    margin-right: 5px;
+}
+.add-hashtag::placeholder {
+    color: #B6B3B3;
+    font-family: 'Poppins-Regular';
 }
 
 
+.swich-container {
+    position: relative;
+    top: 6rem;
+    left: 41vw;
+}
 
+.private, .public, .public-private {
+    transition: all 0.3s;
+    display: inline-block;
+    position: relative;
+}
+
+.private {
+    left: -5rem;
+}
+.public {
+    left: -1.5rem;
+}
+.public-private:checked + .private + .public,
+.public-private:not(:checked) + .private {
+    color: #80A6E7;
+    font-family: 'Poppins-Semibold';
+}
+.public-private:checked + .private,
+.public-private:not(:checked) + .private + .public {
+    color: rgba(229, 229, 229, 0.53);
+    font-family: 'Poppins-Regular';
+}
+
+.public-private {
+    top: 0.6rem;
+    left: 0.5rem;
+    content: "";
+    width: 2rem;
+    background-color: #F1C4D9;
+    height: 4px;
+    border-radius: 3px;
+}
+
+.public-private::before {
+    transition: all 0.3s;
+    display: inline-block;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: #80A6E7;
+    border-radius: 50%;
+    position: relative;
+    top: -0.4rem;
+    left: -0.25rem;
+}
+.public-private:checked::before {
+    left: 1.25rem;
+}
+
+.btn-public {
+    cursor: pointer;
+    position: absolute;
+    top: 92vh;
+    right: 2rem;
+    font-family: 'Poppins-Medium';
+    font-size: 1rem;
+    padding: 3px 15px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: #80A6E7;
+}
 
 .colere::before {
     content: url("../../../img/Emojis/Colère\ icone.svg");
@@ -75,8 +206,8 @@ a {
 .tristesse::before {
     content: url("../../../img/Emojis/Tristesse\ icone.svg");
 }
-.famille::before {
-    content: url("../../../img/Emojis/Famille\ icone.svg");
+.surprise::before {
+    content: url("../../../img/Emojis/excited.svg");
 }
 
 .coeur-brise::before {

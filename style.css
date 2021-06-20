@@ -64,3 +64,7 @@ p {
 .pink {
     background-color: rgb(var(--pink));
 }
+
+.ns {
+    appearance: none;
+}
