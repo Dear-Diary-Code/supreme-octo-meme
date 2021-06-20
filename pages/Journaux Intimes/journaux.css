@@ -61,6 +61,7 @@ p {
 .ecrire1 {
  margin-left:  10px;
 }
+
   .boule1 {
     background: rgba(168, 178, 244, 0.13);
     border-radius: 5px;
@@ -74,7 +75,7 @@ p {
     border-radius: 5px;
     position: absolute;
     margin: 16px;
-    top: 357px;
+    top: 365px;
 }
 
 .boule3 {
