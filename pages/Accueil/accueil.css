@@ -6,6 +6,10 @@ h1 {
     left: 1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 .date {
     position: relative;
     top: 4rem;
