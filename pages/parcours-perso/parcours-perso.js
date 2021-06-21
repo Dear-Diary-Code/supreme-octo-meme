@@ -62,10 +62,10 @@ const meteoTexte = document.getElementById('meteo-texte');
 const meteoTextes = {
     'soleil': 'Je me sens ensoleillé, je suis prêt à aider les autres !',
     'nuageux': 'Le soleil est là, mais il y a des nuages à l\'horizon...',
-    'arc-en-ciel': 'Après la pluie le beau temps, je sors d\'une periode désagréable',
+    'arc-en-ciel': 'Après la pluie le beau temps, je sors d\'une période désagréable',
     'pluie': 'Je ne suis pas dans une phase positive',
     'nuage': 'Pas de joie ni de tristesse particulière',
-    'eclair': 'Je ressent de la détresse, aidez-moi !'
+    'eclair': 'Je ressens de la détresse, aidez-moi !'
 };
 
 meteoItems.forEach(function(item) {
